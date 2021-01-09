@@ -27,3 +27,18 @@ is used to store the results of analyzing process. The model of said table is de
   "language_id": 2 
 } 
 ```
+
+### Environment variables
+In order to run this application locally it's required to supply it with below environment variables:
+
+`RMQ_HOST` - The RabbitMQ host
+
+`RMQ_PORT` - RabbitMQ port (if not specified default port 5672 is used)
+
+`DB_HOST` - PostgreSQL server host
+
+`DB_DATABASE` - Database name
+
+`DB_USERNAME` - Database username
+
+`DB_PASSWORD` - Database password
