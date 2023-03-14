@@ -1,4 +1,4 @@
-## Frege Analyzer C++
+## Russell Analyzer C++
 ### Overview
 This is an application responsible for analyzing <b>.cpp</b> files. 
 It is responsible for accepting messages from queue <b>analyze-cpp</b> defined in [examples](#examples).
@@ -9,7 +9,7 @@ In order to analyze said files the application uses [lizard](https://pypi.org/pr
 After completing the process application sends a message to <b>gc</b> queue in order to confirm that the process of 
 analyzing have been completed. Example of said message can be seen in [examples](#examples).
 
-The application connects to <b>frege</b> <i>postgresql</i> database and automatically creates table <b>cppfile</b> that
+The application connects to <b>Russell</b> <i>postgresql</i> database and automatically creates table <b>cppfile</b> that
 is used to store the results of analyzing process. The model of said table is defined in [database.py](frege-analyzer-cpp/database.py)
 
 ### Examples
